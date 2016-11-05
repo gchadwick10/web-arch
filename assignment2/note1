@@ -8,7 +8,7 @@
     <div class="notes">
 	<p class="title">Note Title</p>
 	<p class="comments">Comments</p>
-	<p><a href="reference.html">See references for this note</a></p>
+	<p><a href="references.html">See references for this note</a></p>
 	<p><a href="image.html">See images for this note</a></p>
 	<p><a href="notebook1.html">Return to Notebook 1</a></p>
 	
