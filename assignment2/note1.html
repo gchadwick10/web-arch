@@ -2,18 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title >Note 1 in {{ notebook_id }}</title>
-	</head>
-	<h1>Note 1</h1>
-    <div class="notes">
-	<p class="title">Note Title</p>
-	<p class="comments">Comments</p>
-	<p><a href="references.html">See references for this note</a></p>
-	<p><a href="image.html">See images for this note</a></p>
-	<p><a href="notebook1.html">Return to Notebook 1</a></p>
-	
-	
-    </div>
+    <title>Note 1 in {{ notebook_id }}</title>
+</head>
+<h1>Note 1</h1>
+
+<div class="note" data-id="1">
+    <p class="title">Note Title</p>
+
+    <p class="comments">Comments</p>
+
+    <p><a href="references.html">See references for this note</a></p>
+
+    <p><a href="image.html">See images for this note</a></p>
+
+    <p><a href="notebook1.html">Return to Notebook 1</a></p>
+
+
+</div>
+<div class="note-update" data-id="noteId">
+    <form action="/note/1" method="put">
+        <div>
+            <label for="title">Title:</label>
+            <input id="title" name="title" type="text" value="Note Title"/>
+            <label for="comments">Title:</label>
+
+<textarea id="comments" name="comments" rows="4" cols="50">
+Note comments</textarea>
+        </div>
+        <div class="button">
+            <button type="submit">Update this note</button>
+        </div>
+    </form>
+</div>
 
 <body>
 
