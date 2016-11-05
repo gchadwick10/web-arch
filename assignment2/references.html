@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Reference List</title>
+	</head>
+	<h1>Reference List for {{ note_id}}</h1>
+    <div class="references">
+    <ul>
+        <li><span class="reference"><a href="reference1.html">Reference1 Title</a></span></li>
+    </ul>
+    </div>
+	
+	<form action="/references" method="post">
+    <div>
+        <label for="author">Name:</label>
+        <input type="text" name="user_name" />
+    </div>
+    <div>
+        <label for="title">Title:</label>
+        <input type="email" id="mail" name="user_mail" />
+    </div>
+    <div>
+        <label for="full_citation">Full Citation:</label>
+        <textarea name="citation"></textarea>
+    </div>
+	
+	<div class="button">
+        <button type="submit">Save this reference</button>
+    </div>
+	</form>
+	
+	<div class="return_link"><a href="note.html">Return to the {{ note_id }}</a></div>
+<body>
+
+</body>
+</html>
