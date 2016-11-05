@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Reference1</title>
+	</head>
+	<h1>{{note_id}}</h1>
+    <div class="reference">
+		<p class="author">Author Name</p>
+		<p class="title">Reference Title</p>
+		<p class="full_citation">Full Citation</p>
+		<p class="return_to_ref_list"><a href="references.html">Return to the References List</p>
+	
+	</div>
+   
+	
+
+<body>
+
+</body>
+</html>
