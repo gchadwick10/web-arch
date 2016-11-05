@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Link 1 in note1</title>
+</head>
+<h1>Note 1</h1>
+
+<div class="link" data-id="1">
+    <p class="comment">Comment for link</p>
+
+    <p class="comments">Comments</p>
+
+    <p><a href="link.html">A link</a></p>
+
+
+    <p><a href="note1.html">Return to Note 1</a></p>
+
+
+</div>
+<div class="link-update" data-id="noteId">
+    <form action="/note/1/link" method="put">
+        <div>
+            <label for="comment">Comment:</label>
+            <input id="comment" name="comment" type="text" value="Link Comment"/>
+        </div>
+        <div>
+            <label for="link">Link:</label>
+            <input id="link" name="link" type="text" value="http://mumble"/>
+        </div>
+
+
+</div>
+        <div class="button">
+            <button type="submit">Update this link</button>
+        </div>
+    </form>
+</div>
+
+<body>
+
+</body>
+</html>
