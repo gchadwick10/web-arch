@@ -5,12 +5,32 @@
     <title >Images</title>
 </head>	
 <body>
+	<h1>Image List for {{ note_id }}</h1>
+
 	<div class="images">
 	    <ul>
 	        <li><span class="image"><a href="image1.html">Arctic Ice Caps</a></span></li>
 	        <li><span class="image"><a href="image2.html">Ozone Layer</a></span></li>
 	        <li><span class="image"><a href="image3.html">Sea Level Rise</a></span></li>
 	    </ul>
+    </div>
+
+    <div class="upload_image">
+		<form action="/images" method="post">
+			<label for="title">Image Title: </label>
+			<input type="text" name="image_title">
+
+			<label for="url">Image URL: </label>
+			<input type="url" name="image_url">
+			
+			<div class="button">
+		        <button type="submit">Save Image</button>
+		    </div>
+		</form>
+    </div>
+
+    <div class="return_link">
+    	<a href="note1.html">Return to the {{ note_id }}</a>
     </div>
 </body>
 </html>
