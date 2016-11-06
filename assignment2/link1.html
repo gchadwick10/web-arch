@@ -4,22 +4,18 @@
     <meta charset="UTF-8">
     <title>Link 1 in note1</title>
 </head>
-<h1>Note 1</h1>
+<h1>Link 1</h1>
+<body>
 
-<div class="link" data-id="1">
+<div class="link">
     <p class="comment">Comment for link</p>
-
-    <p class="comments">Comments</p>
-
     <p><a href="link.html">A link</a></p>
-
-
     <p><a href="note1.html">Return to Note 1</a></p>
 
 
 </div>
-<div class="link-update" data-id="noteId">
-    <form action="/note/1/link" method="put">
+<div class="link-update">
+    <form action="/notebook/1/note/1/link/1" method="put">
         <div>
             <label for="comment">Comment:</label>
             <input id="comment" name="comment" type="text" value="Link Comment"/>
@@ -28,16 +24,18 @@
             <label for="link">Link:</label>
             <input id="link" name="link" type="text" value="http://mumble"/>
         </div>
-
-
-</div>
         <div class="button">
             <button type="submit">Update this link</button>
         </div>
     </form>
 </div>
 
-<body>
-
+<div class="link-delete">
+    <form action="/notebook/1/note/1/link/1" method="delete">
+        <div class="button">
+            <button type="submit">Delete this link</button>
+        </div>
+    </form>
+</div>
 </body>
 </html>
