@@ -4,18 +4,44 @@
     <meta charset="UTF-8">
     <title >Reference1</title>
 	</head>
-	<h1>{{note_id}}</h1>
+<body>
+
+	<h1>Reference</h1>
     <div class="reference">
 		<p class="author">Author Name</p>
 		<p class="title">Reference Title</p>
 		<p class="full_citation">Full Citation</p>
 		<p class="return_to_ref_list"><a href="references.html">Return to the References List</p>
-	
 	</div>
-   
+<div class="link-update">
+	<form action="/notebook/1/note/1/link/1" method="put">
+		<div>
+			<label for="author">Author:</label>
+			<input id="author" name="author" type="text" value=""/>
+		</div>
+		<div>
+			<label for="title">Title:</label>
+			<input id="title" name="title" type="text" value=""/>
+		</div>
+		<div>
+			<label for="full_citation">Full Citation:</label>
+			<input id="full_citation" name="full_citation" type="text" value=""/>
+		</div>
+		<div class="button">
+			<button type="submit">Update this reference</button>
+		</div>
+	</form>
+</div>
+
+<div class="reference-delete">
+	<form action="/notebook/1/note/1/reference/1" method="delete">
+		<div class="button">
+			<button type="submit">Delete this reference</button>
+		</div>
+	</form>
+</div>
 	
 
-<body>
 
 </body>
 </html>
